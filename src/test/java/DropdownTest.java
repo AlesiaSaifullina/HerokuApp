@@ -5,6 +5,7 @@ import static org.testng.Assert.*;
 
 public class DropdownTest extends BaseTest{
 
+
     @Test
     public void dropdown() {
         driver.get("http://the-internet.herokuapp.com/dropdown");
@@ -21,7 +22,5 @@ public class DropdownTest extends BaseTest{
         assertTrue(select.getOptions().get(1).isSelected());
         select.selectByVisibleText("Option 2");
         assertTrue(select.getOptions().get(2).isSelected());
-
-
     }
 }

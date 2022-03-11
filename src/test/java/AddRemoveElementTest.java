@@ -13,7 +13,6 @@ public class AddRemoveElementTest extends BaseTest{
         driver.findElement(By.xpath("//button[text()='Delete']")).click();
         int buttonCount = driver.findElements(By.xpath("//button[text()='Delete']")).size();
         assertEquals(buttonCount, 1, "Count of 'Delete' is not correct");
-
     }
 }
 
